@@ -1,0 +1,24 @@
+name: fMRI_inference
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy>=1.11.0
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib>=2.0.0
+  - seaborn
+  - vtk>=9.1.0,<9.3.2
+  - networkx
+  - pytorch
+  - pip:
+      - brainspace==0.1.20
+      - python-louvain
+      - plotly
+      - torchviz
+      - diagrams
+      - torch-geometric
+      - nilearn
