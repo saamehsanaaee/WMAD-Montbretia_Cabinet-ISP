@@ -38,7 +38,10 @@ In addition to this ```README.md```, there are other markdown files provided in 
 
 We should mention that many functions, especially those for setup and data acquisition, were adopted from the NMA-provided notebook (find it in the [Data](https://github.com/saamehsanaaee/WMAD-Montbretia_Cabinet-ISP/tree/main#data) section). Other functions have detailed docstring documentations, providing sufficient information on their use.
 
-> This repository and its documentation will be updated throughout Spring of 2025 and code snippets for proper use of functions will be added. So, please be patient for the final iterations. For now, the notebooks can just be run from top to bottom as they are so you won't run into any issues if you're looking to use the notebooks. *In the meantime, please open an issue if you see a giant red flag. We would really appreciate that!*
+> [!NOTE]
+> This repository and its documentation will be updated throughout Spring and Summer of 2025 and code snippets for proper use of functions will be added. So, please be patient for the final iterations. For now, the notebooks can just be run from top to bottom as they are so you won't run into any issues if you're looking to use the notebooks.
+> 
+> *In the meantime, please open an issue if you see a giant red flag. We would really appreciate that!*
 
 ---
 ## Models
