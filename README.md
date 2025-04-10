@@ -34,7 +34,7 @@ In terms of reproducitbity, all of our Jupyter Notebooks are self-containing not
 
 The best way to run these notebooks would be to use Google Colab since it will give you a quicker data-access time without the hassel of downloading the files directly from OSF.
 
-In addition to this ```README.md```, there are other markdown files provided in our ```notebooks``` (main) and ```ExtraResources``` folders that help you navigate the repository. The ```ExtraResources``` folder contains a PDF that explains our model architecture and our presentation slides.
+In addition to this ```README.md```, there are other markdown files provided in our folders that help you navigate the repository.
 
 We should mention that many functions, especially those for setup and data acquisition, were adopted from the NMA-provided notebook (find it in the [Data](https://github.com/saamehsanaaee/WMAD-Montbretia_Cabinet-ISP/tree/main#data) section). Other functions have detailed docstring documentations, providing sufficient information on their use.
 
@@ -45,29 +45,21 @@ We should mention that many functions, especially those for setup and data acqui
 
 ---
 ## Models
-Three different models were designed.
+Two different models were designed.
 
-The Working Memory Demand (WMD) model, a Multilayer Perceptron, was created during the NMA CN course in the summer of 2024 as our preliminary (or proof of concept) model. Entering the Impact Scholars Program (ISP), we then expanded this model to create an "improved" model, called Working Memory Architecture and Demand (WMAD) model. WMAD is comprised of two models, one is a (deep learning) GNN-LSTM model, and the other is a (statistical) GLM model.
+The Working Memory Demand (WMD) model, a Multilayer Perceptron (MLP), was created during the NMA CN course in the summer of 2024 as our preliminary (or proof of concept) model. Entering the Impact Scholars Program (ISP), we then expanded this model to create an "improved" model, called Working Memory Architecture and Demand (WMAD) model. WMAD is comprised of a pair of parallel models that merge through a fusion layer and are then passed to an MLP (with similar structure to WMD).
 
-The GNN-LSTM model has two purposes. First, it can act as the demand "sensor" (just like the WMD model) and predict demand of tasks when it recieves parcel-based BOLD signals. Second, it can identify significant WM parcels that contribute the most to WM function.
+These two models give us insight into temporal and spatial activity of working memory and its structure while fulfilling the role of a "task demand sensor".
 
-The GLM model, although we could not use it due to technical incompatibility, would look at temporal WM activity data. It would show us when and where the WM activity is present, giving a temporal "map" of how WM information travels through the brain. (We're currently working to problem-solve and debug this part of WMAD.)
-
-Combined, these two models could give us insight into temporal and spatial activity of working memory and its structure while still fulfilling the role of a "task demand sensor". However, while the WMD and GNN-LSTM models help us derive significant results related to the locality of WM activity, the GLM would show us the path of activation through the structure of WM.
 ### WMD (Preliminary) Model
 The WMD, constructed with dense and dropout layers that are organized into 4 paired-layers, is a classifier MLP that takes in 360 parcel-based average BOLD signals and generates two outputs. The outputs, probability values corresponding to numbers 0 (low-demand) and 1 (high-demand) act as our labels, telling us how likely it is that the input signal is a 0 or a 1.
 ### WMAD Model
-The WMAD model buils off of the WMD. Main improvements of the WMAD model are use of time series instead of avergae BOLD signals, addition of GNN and LSTM to the model architecture, and higher interpretability of the results due to a more granular output. The output of the GNN-LSTM is similar to the preliminary model, but instead of a single paired value, it generates the probabilities for each of the 360 parcels. With this change, we can identify parcels that contribute the most to WM function. The GNN-LSTM model gives us insight into the spatial architecture of WM.
-
-The GLM, if functional, also takes in time series data as input and could elucidate WM function from a temporal view. The GLM could show the flow of information through the brain based on spatiotemporal brain activity recorded by the tfMRI.
-
-## Model Interpretation
-The GNN-LSTM gives us information about significant parcels that play a key role in WM function. The GLM, acting as the complement, would have given us the path of activation through the brain during WM activation. Combined, these two outputs would have allowed us to gain information on the spatiotemporal architecture of working memory.
+The WMAD model builds off of the WMD. Main improvements of the WMAD model are use of time series instead of avergae BOLD signals, addition of GNN and LSTM to the model architecture, and higher interpretability of the results due to a more granular output. The output of the GNN-LSTM is similar to the preliminary model, but instead of a single probability value, it generates the probabilities for each of the 360 parcels. With this change, we can identify parcels that contribute the most to WM function. The GNN-LSTM model gives us insight into the spatial architecture of WM.
 
 ## Generalization of WMAD
-While the results from the WMD gave us valuable insight on how the MLP output could predict WM involvement in other tasks, it did so in a very general way. When we presented emotion and language data to WMD, it predicted the demand of task without much information on the spatial activity.
+While the results from the WMD gave us valuable insight on how the MLP output could predict WM involvement in other tasks, it did so in a very general way. When we presented emotion and language data to WMD, it predicted the demand of task with 90% accuracy but without much information on the spatial activity.
 
-Although this information on the demand of tasks like "arithmatic problem-solving" or "deriving context of a story" is very much valuable, we need a more quantitative look into these predictions. The GNN-LSTM provides parcel-based prediction that shows which parcels are working in "high-demand" mode. This information, along with the knowledge of "significant parcels of WM function" (derived through model interpretation) can show us how and where WM is involved in other tasks like emotion or language. And these predictions are just the start. HCP alone, provides many more tasks that are beyond intriguing when measured through this WM-involvement lens and that is the next step.
+Although this information on the demand of tasks like "arithmatic problem-solving" or "deriving context of a story" is very much valuable, we need a more quantitative look into these predictions. The GNN-LSTM provides parcel-based predictions that shows which parcels are working in "high-demand" mode. This information, along with the knowledge of "significant parcels of WM function" (derived through model interpretation) can show us how and where WM is involved in other tasks like emotion or language. And these predictions are just the start. HCP alone, provides many more tasks that are beyond intriguing when measured through this WM-involvement lens and that is the next step.
 
 ## Acknowledgements
 Data were provided in part by the Human Connectome Project, WU-Minn Consortium (Principal Investigators: David Van Essen and Kamil Ugurbil; 1U54MH091657) funded by the 16 NIH Institutes and Centers that support the NIH Blueprint for Neuroscience Research; and by the McDonnell Center for Systems Neuroscience at Washington University.

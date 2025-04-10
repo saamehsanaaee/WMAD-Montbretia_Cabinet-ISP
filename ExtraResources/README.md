@@ -1,2 +1,2 @@
-# Additional Material from the Project
-This folder will contain additional material from our project, including our presentation, visualizations (WIP), and other supplementary material.
+# Additional Material
+Here, you can find additional material for the project. For now, these include our presentation slides and a `.pdf` that describes our model. Other material like visualizations will be added soon.
