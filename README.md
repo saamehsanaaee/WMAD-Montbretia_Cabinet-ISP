@@ -27,32 +27,32 @@ Main providers of our data have been the Human Connectome Project (HCP), Neuroma
 
 We are using the HCP data subset that NMA has provided during the NMA Computational Neuroscience (CN) 2024 course. The data is a 100-subject subset of the original HCP young adult, is accessible in [Neuromatch OSF page](https://osf.io/hygbm/), and downloadable through codes provided in the [computational neuroscience course content](https://compneuro.neuromatch.io/projects/fMRI/README.html#:~:text=HCP%20task%20datasets,Murray%2C%20Saad%20Jbabdi) from NMA.
 
-The task-based fMRI data from HCP are time series Blood-oxygen-level-dependent (BOLD) signals that show brain activity through an increased blood flow and oxygenation to the active area of the brain. These signals are organized based on "regions" (see ```regions.npy``` section of the WMD Jupyter Notebook) corresponding to the 360 areas of the Glasser parcellation.
+The task-based fMRI data from HCP are time series Blood-oxygen-level-dependent (BOLD) signals that show brain activity through an increased blood flow and oxygenation to the active area of the brain. These signals are organized based on "regions" (see `regions.npy` section of the WMD Jupyter Notebook) corresponding to the 360 areas of the Glasser parcellation.
 
 ## Running the notebooks in this repository
 In terms of reproducitbity, all of our Jupyter Notebooks are self-containing notebooks that you can run independantly of other files.
 
 The best way to run these notebooks would be to use Google Colab since it will give you a quicker data-access time without the hassel of downloading the files directly from OSF.
 
-In addition to this ```README.md```, there are other markdown files provided in our folders that help you navigate the repository.
+In addition to this `README.md`, there are other markdown files provided in each of our folders that help you navigate the repository.
 
-We should mention that many functions, especially those for setup and data acquisition, were adopted from the NMA-provided notebook (find it in the [Data](https://github.com/saamehsanaaee/WMAD-Montbretia_Cabinet-ISP/tree/main#data) section). Other functions have detailed docstring documentations, providing sufficient information on their use.
+We should mention that many functions, especially those for setup and data acquisition, were adopted from the NMA-provided notebook (find it in the [Data](https://github.com/saamehsanaaee/WMAD-Montbretia_Cabinet-ISP/tree/main#data) section). Other functions have detailed docstring documentations, providing sufficient information that help you with their use.
 
 > [!NOTE]
 > This repository and its documentation will be updated throughout Spring and Summer of 2025 and code snippets for proper use of functions will be added. So, please be patient for the final iterations. For now, the notebooks can just be run from top to bottom as they are so you won't run into any issues if you're looking to use the notebooks.
-> There have also been changes in the code and models that will be fully documented in this ```README.md``` file. 
+> There have also been changes in the code and models that will be fully documented in the `README.md` files. 
 > *In the meantime, please open an issue if you see a giant red flag. We would really appreciate that!*
 
 ---
 ## Models
 Two different models were designed.
 
-The Working Memory Demand (WMD) model, a Multilayer Perceptron (MLP), was created during the NMA CN course in the summer of 2024 as our preliminary (or proof of concept) model. Entering the Impact Scholars Program (ISP), we then expanded this model to create an "improved" model, called Working Memory Architecture and Demand (WMAD) model. WMAD is comprised of a pair of parallel models that merge through a fusion layer and are then passed to an MLP (with similar structure to WMD).
+The **Working Memory Demand (WMD)** model, a Multilayer Perceptron (MLP), was created during the NMA CN course in the summer of 2024 as our preliminary (or proof of concept) model. Entering the Impact Scholars Program (ISP), we then expanded this model to create an "improved" model, called **Working Memory Architecture and Demand (WMAD)** model. WMAD is comprised of a pair of parallel models that merge through a fusion layer and are then passed to an MLP (with similar structure to WMD).
 
-These two models give us insight into temporal and spatial activity of working memory and its structure while fulfilling the role of a "task demand sensor".
+These two models give us insight into the spatial activity of working memory and its structure while fulfilling the role of a "task demand sensor".
 
 ### WMD (Preliminary) Model
-The WMD, constructed with dense and dropout layers that are organized into 4 paired-layers, is a classifier MLP that takes in 360 parcel-based average BOLD signals and generates two outputs. The outputs, probability values corresponding to numbers 0 (low-demand) and 1 (high-demand) act as our labels, telling us how likely it is that the input signal is a 0 or a 1.
+The WMD, constructed with dense and dropout layers that are organized into 4 paired-layers, is a classifier MLP that takes in 360 parcel-based average BOLD signals and generates two outputs. The outputs, probability values between 0 and 1 that correspond to the probability of the exposure being a high-demand task (number 0 corresponds to a task being a 0-back, low-demand task and number 1 would be a 100% probability of an exposure being a 2-back, high-demand task).
 ### WMAD Model
 The WMAD model builds off of the WMD. Main improvements of the WMAD model are use of time series instead of avergae BOLD signals, addition of GNN and LSTM to the model architecture, and higher interpretability of the results due to a more granular output. The output of the GNN-LSTM is similar to the preliminary model, but instead of a single probability value, it generates the probabilities for each of the 360 parcels. With this change, we can identify parcels that contribute the most to WM function. The GNN-LSTM model gives us insight into the spatial architecture of WM.
 
