@@ -34,9 +34,9 @@ In terms of reproducitbity, all of our Jupyter Notebooks are self-containing not
 
 The best way to run these notebooks would be to use Google Colab since it will give you a quicker data-access time without the hassel of downloading the files directly from OSF.
 
-However, to make sure you have all dependencies installed, after ensuring you have Python and pip installed, please navigate to the directory containing the `requirements.txt` file and run the following command:
+However, to make sure you have all dependencies installed, after ensuring you have Python and pip installed, please navigate to the main directory and install the `requirements.txt` file through the following command:
 ```bash
-pip install -r requirements.txt
+pip install -r ./notebooks/requirements.txt
 ```
 This command will install all the necessary libraries listed in the `requirements.txt` file.
 

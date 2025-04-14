@@ -1,6 +1,7 @@
 hcp_task
 hcp_task.tgz
 ref_activation_ns/data
+figures/.ipynb_checkpoints
 notebooks/models
 notebooks/hcp_task
 notebooks/hcp_task.tgz
