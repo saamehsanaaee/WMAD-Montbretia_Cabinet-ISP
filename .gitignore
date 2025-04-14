@@ -1,5 +1,11 @@
 hcp_task
 hcp_task.tgz
 ref_activation_ns/data
+notebooks/models
+notebooks/hcp_task
+notebooks/hcp_task.tgz
+notebooks/output_csv_files
+notebooks/averaged_data.csv
 notebooks/.ipynb_checkpoints
+notebooks/BinaryMLP_structure.png
 ref_activation_ns/.ipynb_checkpoints

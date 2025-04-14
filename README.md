@@ -34,6 +34,12 @@ In terms of reproducitbity, all of our Jupyter Notebooks are self-containing not
 
 The best way to run these notebooks would be to use Google Colab since it will give you a quicker data-access time without the hassel of downloading the files directly from OSF.
 
+However, to make sure you have all dependencies installed, after ensuring you have Python and pip installed, please navigate to the directory containing the `requirements.txt` file and run the following command:
+```bash
+pip install -r requirements.txt
+```
+This command will install all the necessary libraries listed in the `requirements.txt` file.
+
 In addition to this `README.md`, there are other markdown files provided in each of our folders that help you navigate the repository.
 
 We should mention that many functions, especially those for setup and data acquisition, were adopted from the NMA-provided notebook (find it in the [Data](https://github.com/saamehsanaaee/WMAD-Montbretia_Cabinet-ISP/tree/main#data) section). Other functions have detailed docstring documentations, providing sufficient information that help you with their use.
