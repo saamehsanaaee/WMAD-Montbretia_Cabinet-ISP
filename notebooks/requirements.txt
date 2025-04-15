@@ -1,10 +1,14 @@
-nilearn
-graphviz
-visualkeras
 numpy
 pandas
+plotly
 seaborn
-tensorflow
-matplotlib
-scikit-learn
+nilearn
 requests
+graphviz
+matplotlib
+tensorflow
+visualkeras
+scikit-learn
+python-louvain
+torch_geometric
+torchviz diagrams

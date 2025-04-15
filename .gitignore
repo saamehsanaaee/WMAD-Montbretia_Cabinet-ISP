@@ -4,6 +4,7 @@ ref_activation_ns/data
 figures/.ipynb_checkpoints
 notebooks/models
 notebooks/hcp_task
+notebooks/test_output
 notebooks/hcp_task.tgz
 notebooks/output_csv_files
 notebooks/averaged_data.csv
