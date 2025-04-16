@@ -1,0 +1,14 @@
+numpy
+pandas
+plotly
+seaborn
+nilearn
+requests
+graphviz
+matplotlib
+tensorflow
+visualkeras
+scikit-learn
+python-louvain
+torch_geometric
+torchviz diagrams
