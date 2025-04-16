@@ -34,11 +34,15 @@ In terms of reproducitbity, all of our Jupyter Notebooks are self-containing not
 
 The best way to run these notebooks would be to use Google Colab since it will give you a quicker data-access time without the hassel of downloading the files directly from OSF.
 
-However, to make sure you have all dependencies installed, after ensuring you have Python and pip installed, please navigate to the main directory and install the `requirements.txt` file through the following command:
+**Prerequisites:** Ensure you have Python, pip, and Conda installed on your system. Please refer to the official documentation for installation instructions:
+* [**Python:**](https://www.python.org/downloads/)
+* **pip:** Usually comes bundled with Python. Verify with `pip --version`. See [installation instructions](https://pip.pypa.io/en/stable/installing/) if needed.
+* **Conda:** [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+Once you have Conda installed, navigate to the main directory containing the `environment.yml` file and create the environment using the following command:
 ```bash
-pip install -r ./notebooks/requirements.txt
+conda env create -f environment.yml
 ```
-This command will install all the necessary libraries listed in the `requirements.txt` file.
 
 In addition to this `README.md`, there are other markdown files provided in each of our folders that help you navigate the repository.
 

@@ -14,11 +14,15 @@ dependencies:
   - vtk>=9.1.0,<9.3.2
   - networkx
   - pytorch
+  - nilearn
+  - requests
+  - graphviz
+  - tensorflow
+  - visualkeras
+  - python-louvain
+  - torch_geometric
+  - torchviz
+  - diagrams
+  - plotly
   - pip:
-      - brainspace==0.1.20
-      - python-louvain
-      - plotly
-      - torchviz
-      - diagrams
-      - torch-geometric
-      - nilearn
+    - brainspace==0.1.20
