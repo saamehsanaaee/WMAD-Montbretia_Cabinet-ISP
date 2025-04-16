@@ -40,19 +40,25 @@ pip install -r ./notebooks/requirements.txt
 ```
 This command will install all the necessary libraries listed in the `requirements.txt` file.
 
-<details>
-    <summary>If you prefer using the `environment.yml` file with `conda`, please use this code.</summary>
-    **Prerequisites:** Ensure you have Python, pip, and Conda installed on your system. Please refer to the official documentation for installation instructions:
-    * [**Python:**](https://www.python.org/downloads/)
-    * **pip:** Usually comes bundled with Python. Verify with `pip --version`. See [installation instructions](https://pip.pypa.io/en/stable/installing/) if needed.
-    * **Conda:** [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+---
 
-    Once you have Conda installed, navigate to the main directory containing the `environment.yml` file and create the environment using the following command:
-    ```bash
-    conda env create -f environment.yml
-    ```
+<details>
+    <summary>Using YAML with Conda</summary>
+
+If you prefer using the `environment.yml` file with `conda`, please use this code.
+**Prerequisites:** Ensure you have Python, pip, and Conda installed on your system. Please refer to the official documentation for installation instructions:
+* [**Python:**](https://www.python.org/downloads/)
+* **pip:** Usually comes bundled with Python. Verify with `pip --version`. See [installation instructions](https://pip.pypa.io/en/stable/installing/) if needed.
+* **Conda:** [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+Once you have Conda installed, navigate to the main directory containing the `environment.yml` file and create the environment using the following command:
+```bash
+conda env create -f environment.yml
+```
 
 </details>
+
+---
 
 In addition to this `README.md`, there are other markdown files provided in each of our folders that help you navigate the repository.
 
