@@ -10,14 +10,16 @@ Current study uses task-based fMRI data from a large-scale project, the Human Co
 
 In our project, statistical and deep learning models acted as “sensors” for task demand and WM activity, predicting how much WM is involved in emotion and language domains. This work provides insights into WM theories from both computational and neurocognitive perspective, with significant implications for education and cognitive rehabilitation.
 
+If you're more into videos, here's our presentation on Neuromatch's YouTube channel: [Working Memory Involvement in Higher Cognition: Insights from fMRI Modeling](https://www.youtube.com/watch?v=F5_z5fJTgNs)
+
 ## Meet the Team!
 | Member                | Where could you find them? |
 | :-------------------- | :------------------------- |
-| Baitong Mu            | [ORCID](https://orcid.org/0009-0008-9040-3108), [GitHub](https://github.com/Mumizz)  |
+| Baitong Mu            | [ORCID](https://orcid.org/0009-0008-9040-3108), [GitHub](https://github.com/Mumizz), [LinkedIn](https://www.linkedin.com/in/baitong-mu-816a00259/) |
 | Carmen Tang           | [ORCID](https://orcid.org/0009-0005-2491-4987), [GitHub](https://github.com/ckmtang) |
-| Zeb Caslick-Waller    | [GitHub](https://github.com/Zebtopia) |
+| Zeb Caslick-Waller    | [GitHub](https://github.com/Zebtopia), [LinkedIn](https://www.linkedin.com/in/zeb-caslick-waller-4a708b238/) |
 | Wendi Li              | [ORCID](https://orcid.org/0009-0009-0796-1123) |
-| Tony Gao              | [ORCID](https://orcid.org/0009-0009-3407-1097) |
+| Tony Gao              | [ORCID](https://orcid.org/0009-0009-3407-1097), [LinkedIn](https://www.linkedin.com/in/zitong-tony-gao/) |
 | Raúl Rodriguez Cruces | [ORCID](https://orcid.org/0000-0002-2917-1212), [GitHub](https://github.com/rcruces) |
 | Saameh Sanaaee        | [ORCID](https://orcid.org/0000-0002-8858-9117), [LinkedIn](https://www.linkedin.com/in/saameh-sanaaee/), [Bluesky](https://bsky.app/profile/saamehsanaaee.bsky.social) |
 
