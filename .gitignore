@@ -11,4 +11,5 @@ notebooks/output_csv_files
 notebooks/averaged_data.csv
 notebooks/.ipynb_checkpoints
 notebooks/BinaryMLP_structure.png
+notebooks/WMAD_processing_temp_files
 ref_activation_ns/.ipynb_checkpoints
