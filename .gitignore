@@ -3,13 +3,17 @@ hcp_task.tgz
 ref_activation_ns/data
 figures/.ipynb_checkpoints
 neurosynth
+processed_data
 notebooks/models
 notebooks/hcp_task
 notebooks/test_output
 notebooks/hcp_task.tgz
+notebooks/models_not_final
 notebooks/output_csv_files
 notebooks/averaged_data.csv
+notebooks/processed_wm_data
 notebooks/.ipynb_checkpoints
 notebooks/BinaryMLP_structure.png
+notebooks/nonWM_data_for_prediction
 notebooks/WMAD_processing_temp_files
 ref_activation_ns/.ipynb_checkpoints

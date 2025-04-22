@@ -1,10 +1,15 @@
 numpy
 pandas
 plotly
+nipype
+nibabel
 seaborn
 nilearn
 requests
 graphviz
+torchviz
+diagrams
+fsl-core
 matplotlib
 tensorflow
 visualkeras
