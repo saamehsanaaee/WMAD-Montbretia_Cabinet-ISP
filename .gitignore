@@ -1,5 +1,6 @@
 hcp_task
 hcp_task.tgz
+glasser360MNI.nii.gz
 ref_activation_ns/data
 figures/.ipynb_checkpoints
 neurosynth
@@ -17,3 +18,4 @@ notebooks/BinaryMLP_structure.png
 notebooks/nonWM_data_for_prediction
 notebooks/WMAD_processing_temp_files
 ref_activation_ns/.ipynb_checkpoints
+notebooks/glass_brain_predictions/.ipynb_checkpoints
