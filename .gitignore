@@ -14,6 +14,7 @@ notebooks/output_csv_files
 notebooks/averaged_data.csv
 notebooks/processed_wm_data
 notebooks/.ipynb_checkpoints
+notebooks/prediction_vectors
 notebooks/BinaryMLP_structure.png
 notebooks/nonWM_data_for_prediction
 notebooks/WMAD_processing_temp_files
