@@ -1,7 +1,13 @@
 # Pre-trained models
-Here are `.keras` files for our trained models.
+Here are `.keras` and `.pth` files for our trained models.
 
-The final version of the Working Memory Demand (WMD) model is saved as `WMD_model.keras` and the final version of our Working Memory Architecture and Demand (WMAD) model will be added soon!
+The WMD, our preliminary model with 90% accuracy, is saved as `WMD_model.keras` and WMAD is saved in multiple ways:
+- The `WMAD_model_alt_version.pth` is the working model, trained end-to-end. It is the version that generated the predictions you'll see in our publication.
+- The `_NotFinal.pth` files come from the `WMAD_GNN_LSTM_original_ver.ipynb` as the model in that notebook was being trained and saved iteratively.
+
+**The final version of the Working Memory Demand (WMD) model is saved as `WMD_model.keras` and the final version of our Working Memory Architecture and Demand (WMAD) model is saved as `WMAD_model_alt_version.pth`!**
+
+So, if you'd like to use our pretrained models, please use these versions.
 
 > [!NOTE]
 > In case you want to use our pretrained models (and help the environment with a tiny step):
