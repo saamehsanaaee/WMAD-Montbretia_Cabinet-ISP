@@ -12,6 +12,12 @@ In our project, statistical and deep learning models acted as “sensors” for 
 
 If you're more into videos, here's our presentation on Neuromatch's YouTube channel: [Working Memory Involvement in Higher Cognition: Insights from fMRI Modeling](https://www.youtube.com/watch?v=F5_z5fJTgNs)
 
+Also, since our micropublication is now live on the interwebs, here's the APA citation for your convenience:
+> Sanaaee, S., Mu, B., Tang, C. K.-M., Caslick-Waller, Z. R. G., Li, W., Gao, T., & Rodriguez Cruces, R. (2025). Parallel GNN-LSTM Model Predicting Working Memory Involvement during Language and Emotion Processing (1.0). Zenodo. https://doi.org/10.5281/zenodo.15126506
+
+Please use this form of the citation when you want to cite us!
+
+---
 ## Meet the Team!
 | Member                | Where could you find them? |
 | :-------------------- | :------------------------- |
